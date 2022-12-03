@@ -5,9 +5,9 @@ class Day02 {
     @Test
     fun solve() {
         // Load input
-        val inputText = this.javaClass.getResource("Day2.txt")?.readText()!!
+        val inputText = this.javaClass.getResource("Day02.txt")?.readText()!!
         val strategy = inputText
-            .split("\n")
+            .split(System.lineSeparator())
             .map { round ->
                 val choices = round.split(" ")
                 (choices[0] to choices[1])

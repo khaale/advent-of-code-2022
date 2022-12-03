@@ -5,11 +5,11 @@ class Day01 {
     @Test
     fun solve() {
         // Load input
-        val inputText = this.javaClass.getResource("Day1.txt")?.readText()!!
+        val inputText = this.javaClass.getResource("Day01.txt")?.readText()!!
         val elves = inputText
-            .split("\n\n")
+            .split(System.lineSeparator()+System.lineSeparator())
             .map { inv ->
-                inv.split("\n").map { invLine -> invLine.toInt() }
+                inv.split(System.lineSeparator()).map { invLine -> invLine.toInt() }
             }
         //Part One
         val maxInv = elves
